@@ -1,0 +1,20 @@
+create database libraryV
+use libraryV
+create table books(
+     book_id int PRIMARY KEY AUTO_INCREMENT,
+     book_name varchar(20),
+     book_author varchar(20),  
+     book_page varchar(20),
+     book_language varchar(20),  
+     book_status int DEFAULT 0
+     )
+create table members(
+     member_id int PRIMARY KEY AUTO_INCREMENT,
+     member_name varchar(20),
+     member_phone varchar(20)
+     )
+create table borrows(
+     borrow_id int PRIMARY KEY AUTO_INCREMENT,
+     bbook_id varchar(20),
+     bmember_id varchar(20)
+     )   
